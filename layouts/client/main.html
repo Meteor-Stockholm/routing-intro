@@ -1,0 +1,39 @@
+<template name="mainLayout">
+  <nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container">
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li>
+            {{#linkTo route='home'}}
+              Home
+            {{/linkTo}}
+          </li>
+          <li>
+            {{#linkTo route='dashboard'}}
+              Dashboard
+            {{/linkTo}}
+          </li>
+          <li>
+            {{#linkTo route='users'}}
+              Users
+            {{/linkTo}}
+          </li>
+          <li>
+            {{#if currentUser}}
+              {{#linkTo route='logout'}}
+                Logout
+              {{/linkTo}}
+            {{else}}
+              {{#linkTo route='login'}}
+                Login
+              {{/linkTo}}
+            {{/if}}
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    {{> yield}}
+  </div>
+</template>
