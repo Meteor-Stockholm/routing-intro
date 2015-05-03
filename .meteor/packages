@@ -12,3 +12,4 @@ coffeescript
 zimme:iron-router-auth
 accounts-password
 aldeed:autoform
+zimme:iron-router-active
