@@ -10,3 +10,6 @@ insecure
 twbs:bootstrap
 iron:router
 coffeescript
+zimme:iron-router-auth
+accounts-password
+aldeed:autoform
